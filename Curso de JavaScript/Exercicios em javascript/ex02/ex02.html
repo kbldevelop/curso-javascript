@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex02</title>
+</head>
+<body>
+    <p>Insira valores A e B para trocalos</p><br>
+    A <input type="number" name="num1" id="num1"><br>
+    B <input type="number" name="num2" id="num2"><br>
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="res"></div>
+
+    <script>
+        function enviar() {
+            var n1 = document.getElementById(`num1`).value
+            var n2 = document.getElementById(`num2`).value
+            var nr = document.getElementById(`num1`).value
+            var res = document.getElementById(`res`)
+            Number(n1 = n2)
+            Number(n2 = nr)
+                res.innerHTML = `Você trocou o valor A pelo valor B que vale ${n1}<br>`
+                res.innerHTML += `E trocou o valor B pelo Valor A que vale ${n2}`
+                    
+        }
+    </script>
+</body>
+</html>

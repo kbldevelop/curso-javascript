@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex03</title>
+</head>
+<body>
+    <h1>Insira a idade de duas crianças</h1>
+    Criança 1 <input type="number" name="idade1" id="idade1" placeholder="Digite uma idade" required>
+    criança 2 <input type="number" name="idade2" id="idade2" placeholder="Digite outra idade" required>
+    <input type="button" value="Enviar" onclick="go()">
+    <div id="res"></div>
+
+    <script>
+        function go() {
+            var idade1 = Number(document.getElementById(`idade1`).value)
+            var idade2 = Number(document.getElementById(`idade2`).value)
+            var soma = idade1 + idade2
+            var media = soma / 2
+            if (idade1 > 14 || idade2 > 14) {
+                res.innerHTML = `Digite uma idade menor que 14`
+            } else {
+            res.innerHTML = `A primeira criança tem ${idade1} anos. <br>`
+            res.innerHTML += `A segunda criança tem ${idade2} anos.<br>` 
+            res.innerHTML += `A soma entre as idades é de ${soma}<br>` 
+            res.innerHTML += `A média entre as duas idades somadas é ${media}`
+            }
+        }
+    </script>
+</body>
+</html>

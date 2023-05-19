@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Naruto</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Derrote o inimigo!</h1>
+    </header>
+    <section class="regras">
+        <div class="p1">
+        <h2>Use os comandos para derrotar o Itachi.</h2>
+        <p>Digite (atk) para atacar o inimigo. Cada ataque da 20% de dano.</p>
+        <p>Digite (def) para defender o o ataque do inimigo, perdendo apenas 2% de vida</p>
+        <p>Se você for atacado perderá 20% de vida também.</p>
+        <p>O inimigo começa com 100% de vida.</p>
+        <p>Seu personagem começa com 100% de vida</p>
+        </div>
+
+        <div class="p2">
+            <h2>Use as teclas a,b,c para escolher seu personagem.</h2>
+            <p>Aperte (a) para escolher: Naruto</p>
+            <p>Aperte (b) para escolher: Sasuke</p>
+            <p>Aperte (c) para escolher: Sakura</p>
+        </div>
+    </section>
+
+    <section class="game">
+        <h1>comandos:</h1>
+        <input type="text" name="com1" id="com1">
+        <input type="button" value="Jogar" id="jogar1" onclick="jogar()">
+
+        <div id="res"></div>
+    </section>
+    <script src="comandos.js"></script>
+</body>
+</html>
